@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="divider">#22000000</color>
+    <color name="divider_item">#56000000</color>
+    <color name="drawer_head">#26000000</color>
+    <color name="fragment_background">#22000000</color>
+
+    <!--定义status的字体颜色-->
+    <color name="status_name_text">#000000</color>
+    <color name="status_primary_text">#222222</color>
+    <color name="status_second_text">#666666</color>
+    <color name="status_retweeted_name">#3F51B5</color>
+    <color name="status_retweeted_background">#11000000</color>
+
+    <!--定义刷新颜色条-->
+    <color name="refresh">#3F51B5</color>
+</resources>

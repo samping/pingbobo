@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/status_retweeted_layout"
+    android:visibility="gone"
+    android:background="@color/status_retweeted_background"
+    android:padding="@dimen/status_layout_padding">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/status_retweeted_name"
+        style="@style/status_name"
+        android:textColor="@color/status_retweeted_name"
+        android:text="name"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/status_retweeted_text"
+        style="@style/status_primary_text"
+        android:text="sdkdgjklsgjklajewl alekarlae alqew jtlqw "/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/status_retweeted_photo1"
+            style="@style/status_photo_style" />
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/status_retweeted_photo2"
+            style="@style/status_photo_style" />
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/status_retweeted_photo3"
+            style="@style/status_photo_style" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/status_retweeted_photo4"
+            style="@style/status_photo_style" />
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/status_retweeted_photo5"
+            style="@style/status_photo_style" />
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/status_retweeted_photo6"
+            style="@style/status_photo_style" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/status_retweeted_photo7"
+            style="@style/status_photo_style" />
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/status_retweeted_photo8"
+            style="@style/status_photo_style" />
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/status_retweeted_photo9"
+            style="@style/status_photo_style" />
+    </LinearLayout>
+</LinearLayout>

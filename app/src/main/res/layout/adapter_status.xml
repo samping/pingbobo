@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="5dp"
+    card_view:cardElevation="4dp"
+    card_view:cardCornerRadius="4dp">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/status_layout_padding">
+        <com.android.volley.toolbox.NetworkImageView
+            android:layout_width="@dimen/status_thumbnail_icon"
+            android:layout_height="@dimen/status_thumbnail_icon"
+            android:id="@+id/status_icon"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/status_name"
+            style="@style/status_name"
+            android:layout_toRightOf="@id/status_icon"
+            android:text="name"
+            android:layout_marginLeft="8dp"
+            android:padding="1dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/status_time"
+            style="@style/status_second_text"
+            android:layout_alignLeft="@id/status_name"
+            android:text="19hours"
+            android:padding="1dp"
+            android:layout_below="@id/status_name"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/status_come"
+            android:text="come from apple 5"
+            style="@style/status_second_text"
+            android:layout_below="@id/status_name"
+            android:padding="1dp"
+            android:layout_toRightOf="@id/status_time"
+            android:layout_marginLeft="4dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fragment_home_adapter_text"
+            android:layout_alignLeft="@id/status_icon"
+            style="@style/status_primary_text"
+            android:textStyle="normal"
+            android:text="adsakjenwec  asdke kaetj lae tladg  eat a elt"
+            android:layout_below="@id/status_time"
+            android:layout_marginTop="5dp"/>
+    </RelativeLayout>
+    <include layout="@layout/adapter_status_photo">
+    </include>
+    <include layout="@layout/adapter_status_retweeted">
+    </include>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider"
+        android:background="@color/divider"></View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/fragment_home_adapter_send_status"
+            android:gravity="center"
+            style="@style/status_primary_text"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:id="@+id/status_send"
+            android:layout_weight="1"/>
+        <View android:layout_height="match_parent"
+            android:layout_width="@dimen/divider"
+            android:background="@color/divider"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp"></View>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/fragment_home_adapter_coment"
+            android:gravity="center"
+            style="@style/status_primary_text"
+            android:id="@+id/status_comment"
+            android:layout_weight="1"/>
+        <View android:layout_height="match_parent"
+            android:layout_width="@dimen/divider"
+            android:background="@color/divider"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp"></View>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/fragment_home_adapter_good"
+            android:gravity="center"
+            style="@style/status_primary_text"
+            android:id="@+id/status_good"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+</LinearLayout>
+</android.support.v7.widget.CardView>
